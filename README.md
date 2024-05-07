@@ -52,7 +52,7 @@ To use the vue3_weather_app, simply follow these steps:
 
 ## Credits
 
-The vue3_weather_app is developed by [Your Name/Team Name]. Special thanks to OpenWeatherMap for providing the weather data API used in this application.
+The vue3_weather_app is developed by [Samuel || (VersionControlDev())](https://github.com/samthatcode). Special thanks to OpenWeatherMap for providing the weather data API used in this application.
 
 ## Recommended IDE Setup
 

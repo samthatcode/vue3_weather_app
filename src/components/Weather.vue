@@ -18,6 +18,10 @@
       <div class="weather-box">
         <div class="temp">{{ Math.round(weather.main.temp) }}°c</div>
         <div class="weather">{{ weather.weather[0].main }}</div>
+        <div class="details">
+          <div class="humidity">Humidity: {{ weather.main.humidity }}%</div>
+          <div class="wind-speed">Wind Speed: {{ weather.wind.speed }} m/s</div>
+        </div>
       </div>
     </div>
   </main>
@@ -162,6 +166,27 @@ main {
   font-weight: 700;
   font-style: italic;
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.weather-box .details {
+  margin-top: 20px; 
+  display: inline-block;
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 3px 4px rgba(0, 0, 0, .2);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  margin: 30px 0px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+ 
+}
+
+.weather-box .wind-speed, .humidity {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 15px;
 }
 
 .warm {
