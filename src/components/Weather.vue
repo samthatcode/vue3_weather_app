@@ -1,5 +1,6 @@
 <template>
   <main :class="{ warm: isWarmWeather }">
+    <h1 class="header">Weather App</h1>
     <div class="search-box">
       <input
         type="text"
@@ -30,10 +31,8 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-const api_key = 'f1d44e1029400d937bbbbc4c372d95c7'
-// const api_key = import.meta.env.VUE_APP_API_KEY;
-// console.log(api_key)
-// .env not working to store api_key for best practice
+const api_key = import.meta.env.VITE_VUE_API_KEY;
+console.log(api_key)
 const api_base_url = 'https://api.openweathermap.org/data/2.5/'
 
 const query = ref('')
@@ -97,6 +96,13 @@ main {
   min-height: 100vh;
   padding: 25px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .search-box {
