@@ -32,7 +32,7 @@
 import { ref, computed } from 'vue'
 
 const api_key = import.meta.env.VITE_VUE_API_KEY;
-console.log(api_key)
+// console.log(api_key)
 const api_base_url = 'https://api.openweathermap.org/data/2.5/'
 
 const query = ref('')
